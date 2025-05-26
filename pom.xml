@@ -38,7 +38,7 @@
                 </sharedLibraries>
                 <cloudHubDeployment>
                     <uri>https://anypoint.mulesoft.com</uri>
-                    <muleVersion>4.6-java17</muleVersion>
+                    <muleVersion>4.6.16-java17</muleVersion>
                     <connectedAppClientId>${connectedAppClientId}</connectedAppClientId>
                     <connectedAppClientSecret>${connectedAppClientSecret}</connectedAppClientSecret>
                     <connectedAppGrantType>${grant_type}</connectedAppGrantType>
