@@ -39,6 +39,8 @@
                 <cloudHubDeployment>
                     <uri>https://anypoint.mulesoft.com</uri>
                     <muleVersion>4.9.0</muleVersion>
+		    <anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
+                    <anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
                     <connectedAppClientId>${connectedAppClientId}</connectedAppClientId>
                     <connectedAppClientSecret>${connectedAppClientSecret}</connectedAppClientSecret>
                     <connectedAppGrantType>${grant_type}</connectedAppGrantType>
