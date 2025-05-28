@@ -24,12 +24,14 @@
             <artifactId>maven-clean-plugin</artifactId>
             <version>3.2.0</version>
         </plugin>
+
         <plugin>
             <groupId>org.mule.tools.maven</groupId>
             <artifactId>mule-maven-plugin</artifactId>
             <version>${mule.maven.plugin.version}</version>
             <extensions>true</extensions>
             <configuration>
+                <serverId>anypoint-exchange-v3</serverId>
                 <sharedLibraries>
                     <sharedLibrary>
                         <groupId>mysql</groupId>
@@ -39,8 +41,6 @@
                 <cloudHubDeployment>
                     <uri>https://anypoint.mulesoft.com</uri>
                     <muleVersion>4.6-java17</muleVersion>
-		    <anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
-                    <anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
                     <connectedAppClientId>${connectedAppClientId}</connectedAppClientId>
                     <connectedAppClientSecret>${connectedAppClientSecret}</connectedAppClientSecret>
                     <connectedAppGrantType>${grant_type}</connectedAppGrantType>
@@ -60,6 +60,7 @@
         </plugin>
     </plugins>
 </build>
+
 
 
 	<dependencies>
